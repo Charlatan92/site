@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galindo&family=K2D:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/logo.png" alt="logo site pokéstats"></a>
+        <nav>
+            <ul>
+                <li class="li1"><a href="./pokespawn.html">Pokéspawn</a></li>
+                <li class="li2"><a href="./pokeregion.html">PokéRégion</a></li>
+                <li class="li3"><a href="./pokeprofil.html">PokéProfil</a></li>
+                <li class="li4"><a href="./pokediversite.html">PokéDiversité</a></li>
+                <li class="li5"><a href="./pokeevolution.html">PokéÉvolution</a></li>
+                <li class="li6"><a href="./datavizu.pdf" download>Infographie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main_pokediversite">
+        <p>Découvrez dans la PokéDiversité, les types de Pokemon les plus forts en défense et en attaque !</p>
+        <label for="generation-select">Sélectionnez une génération :</label>
+        <select id="generation-select">
+            <!-- Les options seront remplis par le script JS -->
+        </select>
+        <button id="analysis-button">Analyse</button>
+        <section id="canvas-container">
+
+        </section>
+        <div id="text-container">Texte de remplacement de l'image Lucario.</div>
+    </main>
+    <script src="./pokediversite.js"></script>
+</body>
+
+</html>

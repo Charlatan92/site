@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéRégion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galindo&family=K2D:wght@100&display=swap" rel="stylesheet">
+    <!-- Inclusion de Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/logo.png" alt="logo site pokéstats"></a>
+        <nav>
+            <ul>
+                <li class="li1"><a href="./pokespawn.html">Pokéspawn</a></li>
+                <li class="li2"><a href="./pokeregion.html">PokéRégion</a></li>
+                <li class="li3"><a href="./pokeprofil.html">PokéProfil</a></li>
+                <li class="li4"><a href="./pokediversite.html">PokéDiversité</a></li>
+                <li class="li5"><a href="./pokeevolution.html">PokéÉvolution</a></li>
+                <li class="li6"><a href="./datavizu.pdf" download>Infographie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main_pokeregion">
+        <p>Découvrez dans le PokéRégion la tendance des types de Pokemon à Kanto !</p>
+        
+        <section>
+            <canvas id="myChart"></canvas>
+        </section>
+        <p>La courbe de régression linéaire nous permet d'observer la tendance entre le nombre de Pokémon et leurs types respectifs, indiquant si certains types de Pokémon sont plus fréquemment rencontrés que d'autres. Par exemple, cette ligne droite peut nous aider à prévoir le nombre de Pokémon de type Feu que nous pourrions rencontrer en fonction de la tendance générale observée dans notre base de données, donnant ainsi une perspective sur la répartition et la fréquence des différents types de Pokémon dans notre univers d'étude.</p>
+        <img class="florizarre" src="./images/florizarre.svg" alt="pokemon">
+    </main>
+    <!-- Inclusion du script JavaScript -->
+    <script src="pokeregion.js"></script>
+</body>
+
+</html>
